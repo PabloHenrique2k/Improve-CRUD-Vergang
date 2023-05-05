@@ -1,0 +1,190 @@
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
+  color: #03606e;
+}
+
+body {
+  background-color: #03606e;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.top-bar {
+  height: 60px;
+  background-color: #021d1d;
+}
+
+.logo {
+  height: 60px;
+  width: 100px;
+  object-fit: cover;
+}
+
+nav {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  gap: 32px;
+  padding: 12px 0px;
+  justify-content: flex-end;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: color 0.2s;
+  font-weight: 300;
+}
+
+nav a:hover {
+  color: #5bd4d5;
+}
+
+.menu-toggle img {
+  filter: invert();
+}
+
+.social-links {
+  height: 32px;
+}
+
+.panel {
+  position: relative;
+}
+
+.panel img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 80vh;
+}
+
+.panel .text {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  color: white;
+  display: flex;
+  align-items: end;
+  padding-bottom: 80px;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6980433130699089) 100%);
+}
+
+.panel .text h1 {
+  font-size: 52px;
+  max-width: 700px;
+  font-weight: 900;
+}
+
+.panel .text h1 span {
+  color: #5bd4d5;
+}
+
+.panel .text p {
+  text-transform: uppercase;
+  font-size: 24px;
+  color: rgba(255,255,255,0.8);
+}
+
+.about {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: justify;
+  background-color: #d9d6d6;
+}
+
+.about .row {
+  row-gap: 20px;
+}
+
+.about img {
+  border-radius: 4px;
+}
+
+footer {
+  background-color: #03606e;
+  color: white;
+  padding: 20px 0px;
+}
+
+footer p {
+  margin: 0px;
+  color: rgba(255,255,255,0.8);
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.section-title {
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+main {
+  background-color: #d9d6d6;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #000;
+}
+
+main .row {
+  row-gap: 20px;
+}
+
+.card-text {
+  margin-left: 24px;
+}
+
+.card {
+  background-color: rgba(255,255,255,0.7);
+  overflow: hidden;
+}
+
+@media (max-width: 769px) {
+  nav {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+    top: 52px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background-color: #021d1d;
+    left: 0;
+    right: 0;
+    height: max-content;
+    justify-content: center;
+    transition: max-height 0.2s, padding 0.2s;
+  }
+
+  nav.active {
+    max-height: max-content;
+    padding: 20px;
+  }
+
+  .panel .text h1 {
+    font-size: 32px;
+  }
+}

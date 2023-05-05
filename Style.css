@@ -1,0 +1,97 @@
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: sans-serif;
+}
+header {
+    padding: 1rem 10px;
+    width: 100%;
+    background-color: white;
+}
+.conteiner {
+    margin: auto;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+}
+body {
+    background-image: linear-gradient(#fefeff,#316fff,#316fff,#ffffff);
+    width: 100%;
+    min-height: 100vh;  
+    margin: 0 auto;
+}
+.vergang {
+    display: inline-block;
+    box-sizing: content-box;
+    align-items: center;
+}
+.jpeg {
+    width: 200px;
+    margin: 0 auto;
+    max-width: 300px;
+    max-height: 100px;
+    border-radius: 10px;
+}
+.jpegfooter {
+    width: 300px;
+    margin: 0 auto;
+    max-width: 300px;
+    max-height: 300px;
+}
+p {
+    align-items: center;
+    padding: 5px;
+    text-align: justify;
+    font-size: 1.5rem;
+    font-stretch: expanded;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+h2 {
+    background-color: rgba(35, 63, 63, 0.289);
+    border: solid 3px black;
+    padding: 20px;
+    align-items: center;
+    text-align: justify;
+    font-size: 4rem;
+    font-stretch: expanded;
+    font-weight: 400;
+    color: rgb(196, 246, 255);
+}
+.back-img{
+    align-items: center;
+    z-index: 4;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-image: url(subarashi.jpg);
+    background-size: cover;
+}
+.imagem{
+    width: fit-content;
+    display: flex;
+}
+.rodape {
+    align-items: center;
+    z-index: 4;
+    display: flex;
+    color: aliceblue;
+    background-color: black;
+}
+.planosimg {
+    border-radius: 10px;
+    margin: auto;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+}
+.div {
+    background-color: black;
+    margin: auto;
+    display: flex;
+    text-decoration: none;
+}
